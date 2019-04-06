@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <!-- Tempus Dominus Bootstrap 4 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+
+    <style>
+      .head-label {
+        font-weight: bold;
+        -ms-flex: 0 0 100px;
+        flex: 0 0 100px;
+      }
+      pre {
+        margin-bottom: 0;
+      }
+      .only-534 {
+        display: none;
+      }
+    </style>
+    <title>数理情報学輪講テンプレートジェネレータ</title>
+  </head>
+  <body>
+    <div class="container" style="padding:30px 10px 30px 10px">
+      <h1>数理情報学輪講テンプレートジェネレータ</h1>
+      <p>※ 使用は自己責任で．</p>
+      
+      <!-- season -->
+      <div class="form-group row">
+        <label class="col head-label">学期</label>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="season" id="spring" value="spring">
+            <label for="spring" class="form-check-label">春学期</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="season" id="autumn" value="autumn">
+            <label for="autumn" class="form-check-label">秋学期</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- No. -->
+      <div class="form-group row">
+        <label for="number" class="col col-form-label head-label">回数</label>
+        <label class="col-auto col-form-label">第</label>
+        <div class="col">
+          <input class="form-control" type="number" id="number" min="1" value="1" >
+        </div>
+        <label class="col-auto col-form-label">回</label>
+      </div>
+      
+      <!-- name -->
+      <div class="form-group row">
+        <label class="col col-form-label head-label">名前</label>
+        <div class="col">
+          <input class="form-control" id="familyName" placeholder="名字">
+        </div>
+        <div class="col">
+          <input class="form-control" id="givenName" placeholder="名前">
+        </div>
+      </div>
+      
+      <!-- grade -->
+      <div class="form-group row">
+        <label class="col col-form-label head-label">学年</label>
+        <div class="col-auto col-form-label">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="course" id="master" value="master">
+            <label for="master" class="form-check-label">修士課程</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="course" id="PhD" value="PhD">
+            <label for="PhD" class="form-check-label">博士課程</label>
+          </div>
+        </div>
+        <div class="col">
+          <input class="form-control" type="number" id="grade" min="1" value="1">
+        </div>
+        <label class="col-auto col-form-label">年</label>
+      </div>
+      
+      <!-- date -->
+      <div class="form-group row">
+        <label class="col col-form-label head-label">日時</label>
+        <div class="col">
+          <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker" id="date" placeholder="YYYY/MM/DD">
+            <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto col-form-label">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="time" id="first" value="first">
+            <label for="first" class="form-check-label">14:55–15:45</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="time" id="second" value="second">
+            <label for="second" class="form-check-label">15:50–16:40</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- season -->
+      <div class="form-group row">
+          <label class="col head-label">場所</label>
+          <div class="col">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="room" id="534" value="534">
+              <label for="534" class="form-check-label">数理共通大ゼミ室（工14号館534号室）</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="room" id="626" value="626">
+              <label for="626" class="form-check-label">計数大セミナー室（工14号館626号室）</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="room" id="AD" value="AD">
+                <label for="AD" class="form-check-label">工学部6号館セミナー室AD</label>
+              </div>
+          </div>
+        </div>
+        
+      <!-- supervisor -->
+      <div class="form-group row">
+        <label class="col col-form-label head-label">指導教員</label>
+        <div class="col">
+          <input class="form-control" id="supervisorFamilyName" placeholder="名字">
+        </div>
+        <div class="col">
+          <input class="form-control" id="supervisorGivenName" placeholder="名前">
+        </div>
+        <div class="col-auto col-form-label">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="supervisorPosition" id="professor" value="professor">
+            <label for="professor" class="form-check-label">教授</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="supervisorPosition" id="associateProfessor" value="associateProfessor">
+            <label for="associateProfessor" class="form-check-label">准教授</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="supervisorPosition" id="assistantProfessor" value="assistantProfessor">
+            <label for="assistantProfessor" class="form-check-label">講師</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- chair -->
+      <div class="form-group row">
+        <label class="col col-form-label head-label">司会者</label>
+        <label class="col-auto col-form-label only-534">本郷</label>
+        <div class="col">
+          <input class="form-control" id="chair1FamilyName" placeholder="名字">
+        </div>
+        <div class="col">
+          <input class="form-control" id="chair1GivenName" placeholder="名前">
+        </div>
+      </div>
+      <div class="form-group row only-534">
+        <label class="col col-form-label head-label"></label>
+        <label class="col-auto col-form-label">駒場</label>
+        <div class="col">
+          <input class="form-control" id="chair2FamilyName" placeholder="名字">
+        </div>
+        <div class="col">
+          <input class="form-control" id="chair2GivenName" placeholder="名前">
+        </div>
+      </div>
+      
+      <!-- type -->
+      <div class="form-group row">
+        <label class="col head-label">種別</label>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="literature" value="literature">
+            <label for="literature" class="form-check-label">文献紹介</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="research" value="research">
+            <label for="research" class="form-check-label">研究紹介</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="alert alert-warning" role="alert">埋めていない項目があります</div>
+      
+      <div class="card">
+        <div class="card-header"><span id="title"></span></div>
+        <div class="card-body"><pre id="content">aaaa</pre></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Tempus Dominus Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ja.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
