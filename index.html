@@ -35,6 +35,7 @@
       <!-- season -->
       <div class="form-group row">
         <label class="col head-label">学期</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="season" id="spring" value="spring">
@@ -50,6 +51,7 @@
       <!-- No. -->
       <div class="form-group row">
         <label for="number" class="col col-form-label head-label">回数</label>
+        <div class="w-100 d-md-none"></div>
         <label class="col-auto col-form-label">第</label>
         <div class="col">
           <input class="form-control" type="number" id="number" min="1" value="1" >
@@ -60,6 +62,7 @@
       <!-- name -->
       <div class="form-group row">
         <label class="col col-form-label head-label">名前</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col">
           <input class="form-control" id="familyName" placeholder="名字">
         </div>
@@ -71,6 +74,7 @@
       <!-- grade -->
       <div class="form-group row">
         <label class="col col-form-label head-label">学年</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col-auto col-form-label">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="course" id="master" value="master">
@@ -90,6 +94,7 @@
       <!-- date -->
       <div class="form-group row">
         <label class="col col-form-label head-label">日時</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col">
           <div class="input-group date" id="datetimepicker" data-target-input="nearest">
             <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker" id="date" placeholder="YYYY/MM/DD">
@@ -98,6 +103,7 @@
             </div>
           </div>
         </div>
+        <div class="w-100 d-md-none"></div>
         <div class="col-auto col-form-label">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="time" id="first" value="first">
@@ -110,34 +116,37 @@
         </div>
       </div>
       
-      <!-- season -->
+      <!-- room -->
       <div class="form-group row">
-          <label class="col head-label">場所</label>
-          <div class="col">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="room" id="534" value="534">
-              <label for="534" class="form-check-label">数理共通大ゼミ室（工14号館534号室）</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="room" id="626" value="626">
-              <label for="626" class="form-check-label">計数大セミナー室（工14号館626号室）</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="room" id="AD" value="AD">
-                <label for="AD" class="form-check-label">工学部6号館セミナー室AD</label>
-              </div>
+        <label class="col head-label">場所</label>
+        <div class="w-100 d-md-none"></div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="room" id="534" value="534">
+            <label for="534" class="form-check-label">数理共通大ゼミ室（工14号館534号室）</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="room" id="626" value="626">
+            <label for="626" class="form-check-label">計数大セミナー室（工14号館626号室）</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="room" id="AD" value="AD">
+            <label for="AD" class="form-check-label">工学部6号館セミナー室AD</label>
           </div>
         </div>
+      </div>
         
       <!-- supervisor -->
       <div class="form-group row">
         <label class="col col-form-label head-label">指導教員</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col">
           <input class="form-control" id="supervisorFamilyName" placeholder="名字">
         </div>
         <div class="col">
           <input class="form-control" id="supervisorGivenName" placeholder="名前">
         </div>
+        <div class="w-100 d-md-none"></div>
         <div class="col-auto col-form-label">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="supervisorPosition" id="professor" value="professor">
@@ -146,6 +155,10 @@
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="supervisorPosition" id="associateProfessor" value="associateProfessor">
             <label for="associateProfessor" class="form-check-label">准教授</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="supervisorPosition" id="speciallyAppointedAssociateProfessor" value="speciallyAppointedAssociateProfessor">
+            <label for="speciallyAppointedAssociateProfessor" class="form-check-label">特任准教授</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="supervisorPosition" id="assistantProfessor" value="assistantProfessor">
@@ -157,6 +170,7 @@
       <!-- chair -->
       <div class="form-group row">
         <label class="col col-form-label head-label">司会者</label>
+        <div class="w-100 d-md-none"></div>
         <label class="col-auto col-form-label only-534">本郷</label>
         <div class="col">
           <input class="form-control" id="chair1FamilyName" placeholder="名字">
@@ -166,7 +180,7 @@
         </div>
       </div>
       <div class="form-group row only-534">
-        <label class="col col-form-label head-label"></label>
+        <label class="col col-form-label head-label d-none d-md-block"></label>
         <label class="col-auto col-form-label">駒場</label>
         <div class="col">
           <input class="form-control" id="chair2FamilyName" placeholder="名字">
@@ -176,9 +190,19 @@
         </div>
       </div>
       
+      <!-- title -->
+      <div class="form-group row">
+        <label for="talkTitle" class="col col-form-label head-label">題目</label>
+        <div class="w-100 d-md-none"></div>
+        <div class="col">
+          <input class="form-control" id="talkTitle" placeholder="題目">
+        </div>
+      </div>
+      
       <!-- type -->
       <div class="form-group row">
         <label class="col head-label">種別</label>
+        <div class="w-100 d-md-none"></div>
         <div class="col">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="type" id="literature" value="literature">
